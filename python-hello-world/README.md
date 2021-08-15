@@ -29,6 +29,13 @@ This example uses the nice [Python image from Bitnami][image].
 
 The _Dockerfile_ is based on [this one from Bitnami][dockerfile].
 
+## Openshift Build App
+
+$ oc new-app https://github.com/nsxsoft-repo/container-up \
+    --context-dir=python-hello-world  \
+    --name=node-python \
+    --strategy=source \
+
 
 [dockerfile]: https://github.com/bitnami/bitnami-docker-python/blob/master/example/Dockerfile
 [image]: https://bitnami.com/stack/python/containers
