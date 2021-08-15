@@ -1,0 +1,4 @@
+docker build -t react-hello-world .
+docker tag react-hello-world docker-registry-default.pca.svc.ulaval.ca:443/chbac/react-hello-world
+docker push docker-registry-default.pca.svc.ulaval.ca:443/chbac/react-hello-world
+
